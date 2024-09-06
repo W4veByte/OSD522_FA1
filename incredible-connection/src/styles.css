@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 640px) {
+    .carousel {
+        height: 26rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        height: 32rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .carousel-item {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar ul.menu {
+        display: none;
+    }
+
+    .navbar .btn-square {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}

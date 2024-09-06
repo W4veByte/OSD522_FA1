@@ -1,0 +1,41 @@
+/* Tailwind CSS configurations */
+@media (min-width: 640px) {
+
+    /* Small screens */
+    .filter-link {
+        width: calc(50% - 1rem);
+        /* Adjusting width for small screens */
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Large screens */
+    .filter-link {
+        width: calc(25% - 1rem);
+        /* Adjusting width for larger screens */
+    }
+}
+
+/* Ensure proper spacing and alignment */
+ul.flex-wrap {
+    gap: 1rem;
+    /* Adjust spacing between filter links */
+}
+
+ul.flex-wrap li {
+    width: 100%;
+    /* Ensure full-width on small screens */
+}
+
+ul.flex-wrap li a {
+    @apply text-xl font-bold text-blue-900 rounded-b-xl flex items-center justify-center p-4;
+}
+
+ul.flex-wrap li svg {
+    @apply w-8 h-8 mr-2;
+}
+
+ul.flex-wrap li h2 {
+    @apply text-xl;
+}

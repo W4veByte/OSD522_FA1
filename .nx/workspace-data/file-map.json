@@ -1,0 +1,184 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.5",
+  "deps": {},
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "e2e": [
+        {
+          "file": "incredible-connection/e2e/.eslintrc.json",
+          "hash": "16745924632016023354"
+        },
+        {
+          "file": "incredible-connection/e2e/cypress.config.ts",
+          "hash": "1936157283997458708"
+        },
+        {
+          "file": "incredible-connection/e2e/project.json",
+          "hash": "13106446361389790444"
+        },
+        {
+          "file": "incredible-connection/e2e/src/e2e/app.cy.ts",
+          "hash": "2588220647650846806"
+        },
+        {
+          "file": "incredible-connection/e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "incredible-connection/e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "incredible-connection/e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "incredible-connection/e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "incredible-connection/e2e/tsconfig.json",
+          "hash": "14696052795473435316"
+        }
+      ],
+      "incredible-connection": [
+        {
+          "file": "incredible-connection/.eslintignore",
+          "hash": "7663861978715868291"
+        },
+        {
+          "file": "incredible-connection/.eslintrc.json",
+          "hash": "12043951082061843309"
+        },
+        {
+          "file": "incredible-connection/.gitignore",
+          "hash": "16399683567307215337"
+        },
+        {
+          "file": "incredible-connection/.prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": "incredible-connection/.prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": "incredible-connection/.vscode/extensions.json",
+          "hash": "4934098906304722861"
+        },
+        {
+          "file": "incredible-connection/README.md",
+          "hash": "11394559802072144063"
+        },
+        {
+          "file": "incredible-connection/jest.config.ts",
+          "hash": "594161139563025004"
+        },
+        {
+          "file": "incredible-connection/jest.preset.js",
+          "hash": "9430166341120122740"
+        },
+        {
+          "file": "incredible-connection/nx.json",
+          "hash": "4489832610742098956"
+        },
+        {
+          "file": "incredible-connection/package-lock.json",
+          "hash": "256207047575465900"
+        },
+        {
+          "file": "incredible-connection/package.json",
+          "hash": "16899837581618261362"
+        },
+        {
+          "file": "incredible-connection/project.json",
+          "hash": "4449266654718314946"
+        },
+        {
+          "file": "incredible-connection/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "incredible-connection/server.ts",
+          "hash": "8086175766969307244"
+        },
+        {
+          "file": "incredible-connection/src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "incredible-connection/src/app/app.component.html",
+          "hash": "5654460193981998828"
+        },
+        {
+          "file": "incredible-connection/src/app/app.component.spec.ts",
+          "hash": "14289668530252116174"
+        },
+        {
+          "file": "incredible-connection/src/app/app.component.ts",
+          "hash": "12050337368319380457"
+        },
+        {
+          "file": "incredible-connection/src/app/app.config.server.ts",
+          "hash": "472700109066692288"
+        },
+        {
+          "file": "incredible-connection/src/app/app.config.ts",
+          "hash": "2958330198811694491"
+        },
+        {
+          "file": "incredible-connection/src/app/app.routes.ts",
+          "hash": "6185150965714414910"
+        },
+        {
+          "file": "incredible-connection/src/app/nx-welcome.component.ts",
+          "hash": "4507783613136609332"
+        },
+        {
+          "file": "incredible-connection/src/index.html",
+          "hash": "12573906307824433512"
+        },
+        {
+          "file": "incredible-connection/src/main.server.ts",
+          "hash": "11653607448136507287"
+        },
+        {
+          "file": "incredible-connection/src/main.ts",
+          "hash": "6927989456344389281"
+        },
+        {
+          "file": "incredible-connection/src/styles.css",
+          "hash": "4504836678217011967"
+        },
+        {
+          "file": "incredible-connection/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "incredible-connection/tailwind.config.js",
+          "hash": "4616538962241029475"
+        },
+        {
+          "file": "incredible-connection/tsconfig.app.json",
+          "hash": "8463777378820520726"
+        },
+        {
+          "file": "incredible-connection/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "incredible-connection/tsconfig.json",
+          "hash": "564402030144987495"
+        },
+        {
+          "file": "incredible-connection/tsconfig.spec.json",
+          "hash": "16287279946930924495"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

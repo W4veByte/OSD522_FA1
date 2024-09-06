@@ -1,0 +1,19 @@
+<!-- feature-items.component.html -->
+<div *ngIf="searchQuery.trim() === ''" id="featured" class="mx-auto container mb-16 px-4 sm:px-6 lg:px-8">
+  <h2 class="text-3xl text-blue-900 font-bold my-8">Featured Items</h2>
+  
+  <div class="product-container grid lg:gap-16 md:gap-10 gap-6 grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div *ngFor="let product of products" class="card bg-base-100 w-full shadow-xl">
+      <figure class="h-80 w-full p-6">
+        <img class="object-cover p-6 w-full h-full" [src]="product.image" alt="{{ product.name }}" />
+      </figure>
+      <div class="card-body justify-end">
+        <h2 class="card-title">{{ product.name }}</h2>
+        <div class="card-actions justify-between">
+          <span class="text-2xl text-blue-800 font-bold">R {{ product.price }}</span>
+          <label for="my-drawer-4" (click)="addToCart(product)" class="btn drawer-button border-2 border-blue-100 hover:border-blue-400 hover:bg-blue-800 hover:text-white">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

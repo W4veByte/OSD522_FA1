@@ -1,0 +1,162 @@
+{
+  "nodes": {
+    "e2e": {
+      "name": "e2e",
+      "type": "e2e",
+      "data": {
+        "root": "incredible-connection/e2e",
+        "name": "e2e",
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "sourceRoot": "e2e/src",
+        "tags": [],
+        "implicitDependencies": [
+          "incredible-connection"
+        ],
+        "targets": {}
+      }
+    },
+    "incredible-connection": {
+      "name": "incredible-connection",
+      "type": "app",
+      "data": {
+        "root": "incredible-connection",
+        "sourceRoot": "./src",
+        "name": "incredible-connection",
+        "includedScripts": [],
+        "tags": [
+          "npm:private"
+        ],
+        "metadata": {
+          "targetGroups": {}
+        },
+        "targets": {
+          "build": {
+            "executor": "@angular-devkit/build-angular:application",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/incredible-connection",
+              "index": "./src/index.html",
+              "browser": "./src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "tsconfig.app.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
+                }
+              ],
+              "styles": [
+                "./src/styles.css"
+              ],
+              "scripts": [],
+              "server": "src/main.server.ts",
+              "prerender": true,
+              "ssr": {
+                "entry": "server.ts"
+              }
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "optimization": false,
+                "extractLicenses": false,
+                "sourceMap": true
+              }
+            },
+            "defaultConfiguration": "production",
+            "parallelism": true
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "incredible-connection:build:production"
+              },
+              "development": {
+                "buildTarget": "incredible-connection:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "buildTarget": "incredible-connection:build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "options": {
+              "lintFilePatterns": [
+                "./src"
+              ]
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectName}"
+            ],
+            "options": {
+              "jestConfig": "jest.config.ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "incredible-connection:build",
+              "port": 4200,
+              "staticFilePath": "dist/incredible-connection/browser",
+              "spa": true
+            },
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "$schema": "node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "app",
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "e2e": [
+      {
+        "source": "e2e",
+        "target": "incredible-connection",
+        "type": "implicit"
+      }
+    ],
+    "incredible-connection": []
+  },
+  "version": "6.0"
+}

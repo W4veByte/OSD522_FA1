@@ -1,0 +1,7 @@
+<app-navbar (search)="handleSearch($event)"></app-navbar>
+<app-cart></app-cart>
+<app-hero-carousel></app-hero-carousel>
+<app-feature-items [searchQuery]="searchQuery"></app-feature-items>
+<app-upgrade-items [searchQuery]="searchQuery"></app-upgrade-items>
+<app-footer></app-footer>
+<router-outlet></router-outlet>
